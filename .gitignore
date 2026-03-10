@@ -1,0 +1,27 @@
+# Unwanted projects
+test/
+
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+
+# Debug files
+*.gch
+*.pch
+
+# Temporary files
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+
+# Optional: ignore CodeBlocks layout if you want
+*.layout
