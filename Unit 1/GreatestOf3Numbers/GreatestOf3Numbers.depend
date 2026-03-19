@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1773813477 source:d:\git\teaching material\2025-26\2nd sem\c programming\codeblocks source code\unit 1\greatestof3numbers\main.c
+	<stdio.h>
+	<stdlib.h>
+
