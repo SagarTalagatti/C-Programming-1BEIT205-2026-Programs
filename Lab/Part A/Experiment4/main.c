@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-int main()
-{
-    int nrows;
+int main(){
+    int n, i, j, num = 1;
 
-    printf("Number pyramid pattern printing...\n");
-    printf("Enter the number of rows (n): ");
-    scanf("%d",&nrows);
+    printf("Enter number of rows: ");
+    scanf("%d", &n);
 
-    int value = 1;
-    for(int i=1; i<=nrows; i++)
-    {
-        for(int j=1; j<=i; j++)
-        {
-            printf("%-2d ",value++);
-        }
-        printf("\n");
+    if(n<1){
+        printf("Invalid input! Number of rows cannot be zero or negative...\n");
     }
-
+    else{
+        for(i = 1; i <= n; i++){
+            for(j = 1; j <= i; j++){
+                printf("%-2d ", num);
+                num++;
+            }
+            printf("\n");
+        }
+    }
     return 0;
 }
