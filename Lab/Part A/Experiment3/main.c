@@ -21,9 +21,15 @@ int main()
             case 1:
                 printf("Enter amount to deposit: ");
                 scanf("%f", &amount);
-                balance += amount;
-                printf("Amount Deposited Successfully\n");
-                printf("Current Balance = %.2f\n", balance);
+                if(amount > 0)
+                {
+                    balance += amount;
+                    printf("Amount Deposited Successfully\n");
+                    printf("Updated Balance = %.2f\n", balance);
+                }
+                else{
+                    printf("Invalid amount entered!!!\n");
+                }
                 break;
 
             case 2:
@@ -33,11 +39,11 @@ int main()
                 {
                     balance -= amount;
                     printf("Withdrawal Successful\n");
-                    printf("Current Balance = %.2f\n", balance);
+                    printf("Updated Balance = %.2f\n", balance);
                 }
                 else
                 {
-                    printf("Insufficient Balance\n");
+                    printf("Insufficient Balance!!! Withdrawal not permitted!!!\n");
                 }
                 break;
 
@@ -46,11 +52,11 @@ int main()
                 break;
 
             case 4:
-                printf("Thank you for using ATM\n");
+                printf("Thank you for using ATM!!! Bye!!!\n");
                 break;
 
             default:
-                printf("Invalid Choice\n");
+                printf("Invalid Choice!!! Choice must be between 1-4!!!\n");
         }
 
     } while(choice != 4);
