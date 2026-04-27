@@ -1,5 +1,10 @@
-# Unwanted projects
+# Unwanted projects and directories
 test/
+bin/
+obj/
+
+# Other unwanted files
+*.ini
 
 # Compiled binaries
 *.exe
