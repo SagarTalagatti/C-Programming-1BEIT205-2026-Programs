@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1777304045 source:d:\git\teaching material\2025-26\2nd sem\c programming\codeblocks source code\unit 3\stringcomparisonwithoutlibfunc\main.c
+	<stdio.h>
+	<string.h>
+

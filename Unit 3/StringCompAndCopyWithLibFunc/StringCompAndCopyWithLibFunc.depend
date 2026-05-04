@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1777887552 source:d:\git\teaching material\2025-26\2nd sem\c programming\codeblocks source code\unit 3\stringcompandcopywithlibfunc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

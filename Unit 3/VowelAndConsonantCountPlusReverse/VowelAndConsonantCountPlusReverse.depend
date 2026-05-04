@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1777283926 source:d:\git\teaching material\2025-26\2nd sem\c programming\codeblocks source code\unit 3\vowelandconsonantcountplusreverse\main.c
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+
