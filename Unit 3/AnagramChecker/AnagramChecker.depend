@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1778046860 source:d:\git\teaching material\2025-26\2nd sem\c programming\codeblocks source code\unit 3\anagramchecker\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
