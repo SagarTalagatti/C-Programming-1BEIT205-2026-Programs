@@ -1,29 +1,31 @@
 #include <stdio.h>
 
-// function declaration with return type, fn name and parameter list!
-void print_results(int, int, int);
+// function declaration
+int hasPassed(int m1, int m2, int m3);
 
-int main()
-{
+int main(){
     int m1, m2, m3;
-    printf("Enter the marks scored by the student in 3 subjects: ");
-    scanf("%d %d %d",&m1,&m2,&m3);
+    float average;
 
-    print_results(m1,m2,m3);
+    printf("Enter marks of three subjects: ");
+    scanf("%d %d %d", &m1, &m2, &m3);
+
+    average = (m1 + m2 + m3) / 3.0;
+
+    printf("Average Marks = %.2f\n", average);
+
+    int passed = hasPassed(m1, m2, m3); // function call
+    if(passed)
+        printf("Result = PASS\n");
+    else
+        printf("Result = FAIL\n");
 
     return 0;
 }
 
-void print_results(int m1, int m2, int m3){
-    float avg;
-
-    if(m1 < 40 || m2 < 40 || m3 < 40){
-        printf("The student has FAILED!!!\n");
-    }
-    else{
-        printf("The student has PASSED!!!\n");
-        avg = (m1 + m2 + m3) / 3.0f;
-        printf("The average marks scored by the student = %.2f\n", avg);
-    }
-    return;
+int hasPassed(int m1, int m2, int m3){
+    if(m1 >= 40 && m2 >= 40 && m3 >= 40)
+        return 1;
+    else
+        return 0;
 }
